@@ -17,6 +17,7 @@ const Login = () => {
       .then((result) => {
         const loggesUser = result.user;
         console.log(loggesUser);
+        form.reset();
       })
       .catch((error) => {
         console.log(error);
